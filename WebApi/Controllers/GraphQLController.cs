@@ -14,18 +14,19 @@ namespace WebApi.Controllers
 {
     public class GraphQLController : ApiController
     {
-        //private readonly ISchema _schema;
+        private readonly ISchema _schema;
         private readonly IDocumentExecuter _executer;
         private readonly IDocumentWriter _writer;
         private readonly IDictionary<string, string> _namedQueries;
 
         public GraphQLController(
             IDocumentExecuter executer,
-            IDocumentWriter writer)
+            IDocumentWriter writer,
+            ISchema schema)
         {
             _executer = executer;
             _writer = writer;
-            //_schema = schema;
+            _schema = schema;
 
             _namedQueries = new Dictionary<string, string>
             {
@@ -47,7 +48,7 @@ namespace WebApi.Controllers
 
             return response;
 
-            //return ResponseMessage(Request.CreateResponse(HttpStatusCode.OK, new { pagibig = "test" }));
+            
         }
 
     }

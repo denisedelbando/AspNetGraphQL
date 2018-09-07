@@ -1,9 +1,13 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
 using Autofac.Integration.WebApi;
+using Data.Schema;
+using Data.Services;
 using GraphQL;
 using GraphQL.Http;
+using GraphQL.Types;
 using Owin;
+using System;
 using System.Web.Http;
 using System.Web.Mvc;
 
@@ -45,7 +49,23 @@ namespace WebApi
             #region GraphQL
             builder.RegisterInstance(new DocumentExecuter()).As<IDocumentExecuter>();
             builder.RegisterInstance(new DocumentWriter(true)).As<IDocumentWriter>();
-            //container.Singleton<ISchema>(new StarWarsSchema(new FuncDependencyResolver(type => container.Get(type))));
+            builder.RegisterAssemblyTypes(typeof(CompanyService).Assembly)
+               .Where(t => t.Name.EndsWith("Service"))
+               .AsImplementedInterfaces()
+               .InstancePerRequest();
+
+            builder.RegisterType<CompanyQuery>().AsSelf();
+            builder.RegisterType<CompanyType>().AsSelf();
+            builder.RegisterType<DrugType>().AsSelf();
+            
+            builder.RegisterType<CompanySchema>().As<ISchema>().InstancePerRequest();
+
+            builder.Register<GraphQL.IDependencyResolver>(c =>
+            {
+                var context = c.Resolve<IComponentContext>();
+                return new FuncDependencyResolver(type => context.Resolve(type));
+            });
+
             #endregion
 
             builder.RegisterModule<AutofacWebTypesModule>();
@@ -56,6 +76,7 @@ namespace WebApi
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
             //for WebApi
             GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver(container);
+            
             #endregion
         }
     }
