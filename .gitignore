@@ -30,17 +30,6 @@ karma.conf.js
 protractor.conf.js
 e2e/
 
-#Config Files
-settings.json
-src-server/AdminPortal.Data/db.config
-src-server/AdminPortal.Web/db.config
-
-src-server/AdminPortal.Web/assets.svg
-src-server/AdminPortal.Web/*.js
-src-server/AdminPortal.Web/*.css
-src-server/AdminPortal.Web/images
-src-server/AdminPortal.Web/index.html
-
 ftp.json
 
 #Conflict files
