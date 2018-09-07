@@ -12,354 +12,354 @@ namespace Data.Services
         {
             _companies = new List<Company>() {
                 new Company() {
-                    ID = 1,
+                    id = 1,
                     CompanyName = "Waab",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 2,
+                    id = 2,
                     CompanyName = "Cedward",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 3,
+                    id = 3,
                     CompanyName = "Metroz",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 4,
+                    id = 4,
                     CompanyName = "Petigems",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 5,
+                    id = 5,
                     CompanyName = "Sustenza",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 6,
+                    id = 6,
                     CompanyName = "Emtrac",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 7,
+                    id = 7,
                     CompanyName = "Newcube",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 8,
+                    id = 8,
                     CompanyName = "Balooba",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 9,
+                    id = 9,
                     CompanyName = "Extragen",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 10,
+                    id = 10,
                     CompanyName = "Fortean",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 11,
+                    id = 11,
                     CompanyName = "Paragonia",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 12,
+                    id = 12,
                     CompanyName = "Aquazure",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 13,
+                    id = 13,
                     CompanyName = "Zeam",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 14,
+                    id = 14,
                     CompanyName = "Ronbert",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 15,
+                    id = 15,
                     CompanyName = "Kidgrease",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 16,
+                    id = 16,
                     CompanyName = "Lyrichord",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 17,
+                    id = 17,
                     CompanyName = "Telequiet",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 18,
+                    id = 18,
                     CompanyName = "Terrasys",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 19,
+                    id = 19,
                     CompanyName = "Hawkster",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 20,
+                    id = 20,
                     CompanyName = "Flotonic",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 21,
+                    id = 21,
                     CompanyName = "Poochies",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 22,
+                    id = 22,
                     CompanyName = "Radiantix",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 23,
+                    id = 23,
                     CompanyName = "Zanilla",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 24,
+                    id = 24,
                     CompanyName = "Applidec",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 25,
+                    id = 25,
                     CompanyName = "Polaria",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 26,
+                    id = 26,
                     CompanyName = "Recritube",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 27,
+                    id = 27,
                     CompanyName = "Myopium",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 28,
+                    id = 28,
                     CompanyName = "Klugger",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 29,
+                    id = 29,
                     CompanyName = "Motovate",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 30,
+                    id = 30,
                     CompanyName = "Bluplanet",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 31,
+                    id = 31,
                     CompanyName = "Kog",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 32,
+                    id = 32,
                     CompanyName = "Panzent",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 33,
+                    id = 33,
                     CompanyName = "Buzzness",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 34,
+                    id = 34,
                     CompanyName = "Ceprene",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 35,
+                    id = 35,
                     CompanyName = "Hydrocom",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 36,
+                    id = 36,
                     CompanyName = "Kiggle",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 37,
+                    id = 37,
                     CompanyName = "Geekular",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 38,
+                    id = 38,
                     CompanyName = "Insuresys",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 39,
+                    id = 39,
                     CompanyName = "Nebulean",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 40,
+                    id = 40,
                     CompanyName = "Musanpoly",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 41,
+                    id = 41,
                     CompanyName = "Hopeli",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 42,
+                    id = 42,
                     CompanyName = "Opticall",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 43,
+                    id = 43,
                     CompanyName = "Keeg",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 44,
+                    id = 44,
                     CompanyName = "Xerex",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 45,
+                    id = 45,
                     CompanyName = "Tropoli",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 46,
+                    id = 46,
                     CompanyName = "Franscene",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 47,
+                    id = 47,
                     CompanyName = "Pharmex",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 48,
+                    id = 48,
                     CompanyName = "Edecine",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 49,
+                    id = 49,
                     CompanyName = "Moreganic",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 50,
+                    id = 50,
                     CompanyName = "Flumbo",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 51,
+                    id = 51,
                     CompanyName = "Zolar",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 52,
+                    id = 52,
                     CompanyName = "Caxt",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 53,
+                    id = 53,
                     CompanyName = "Kozgene",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 54,
+                    id = 54,
                     CompanyName = "Collaire",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 55,
+                    id = 55,
                     CompanyName = "Vortexaco",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 56,
+                    id = 56,
                     CompanyName = "Surelogic",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 57,
+                    id = 57,
                     CompanyName = "Jamnation",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 58,
+                    id = 58,
                     CompanyName = "Signidyne",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 59,
+                    id = 59,
                     CompanyName = "Konnect",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 60,
+                    id = 60,
                     CompanyName = "Calcula",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 61,
+                    id = 61,
                     CompanyName = "Earwax",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 62,
+                    id = 62,
                     CompanyName = "Frenex",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 63,
+                    id = 63,
                     CompanyName = "Isologica",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 64,
+                    id = 64,
                     CompanyName = "Evidends",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 65,
+                    id = 65,
                     CompanyName = "Inrt",
-                    isActive = false
+                    IsActive =  false
                 },
                 new Company() {
-                    ID = 66,
+                    id = 66,
                     CompanyName = "Hotcakes",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 67,
+                    id = 67,
                     CompanyName = "Genmy",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 68,
+                    id = 68,
                     CompanyName = "Sunclipse",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 69,
+                    id = 69,
                     CompanyName = "Scenty",
-                    isActive = true
+                    IsActive =  true
                 },
                 new Company() {
-                    ID = 70,
+                    id = 70,
                     CompanyName = "Omatom",
-                    isActive = true
+                    IsActive =  true
                 }
 
             };
@@ -372,7 +372,7 @@ namespace Data.Services
 
         public Task<Company> GetCompanyByIdAsync(int id)
         {
-            return Task.FromResult(_companies.Single(xx => Equals(xx.ID, id)));
+            return Task.FromResult(_companies.Single(xx => Equals(xx.id, id)));
         }
 
         public Task<IEnumerable<Company>> GetCompanysAsync()

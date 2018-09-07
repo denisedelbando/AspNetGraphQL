@@ -14,7 +14,7 @@ namespace Data.Schema
         public DrugType(ICompanyService companyService)
         {
             
-            Field(xx => xx.ID);
+            Field(xx => xx.id);
             Field(xx => xx.GenericName);
             Field(xx => xx.CreateDate);
             Field<CompanyType>("company",

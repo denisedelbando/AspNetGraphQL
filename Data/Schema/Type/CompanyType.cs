@@ -12,9 +12,9 @@ namespace Data.Schema
     {
         public CompanyType()
         {
-            Field(xx => xx.ID);
+            Field(xx => xx.id);
             Field(xx => xx.CompanyName);
-            Field(xx => xx.isActive);
+            Field(xx => xx.IsActive);
         }
     }
 }

@@ -8,8 +8,8 @@ namespace Models
 {
     public class Company
     {
-        public int ID{ get; set; }
+        public int id{ get; set; }
         public string CompanyName { get; set; }
-        public bool isActive { get; set; }
+        public bool IsActive { get; set; }
     }
 }

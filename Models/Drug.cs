@@ -8,7 +8,7 @@ namespace Models
 {
     public class Drug
     {
-        public int ID{ get; set; }
+        public int id{ get; set; }
         public string CreateDate { get; set; }
         public int CompanyID { get; set; }
         public string GenericName { get; set; }
