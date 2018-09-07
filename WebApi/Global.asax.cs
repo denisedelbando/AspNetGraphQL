@@ -9,15 +9,20 @@ using System.Web.Routing;
 
 namespace WebApi
 {
-    public class WebApiApplication : System.Web.HttpApplication
+    public class Global : HttpApplication
     {
-        protected void Application_Start()
+        protected void Application_BeginRequest(object sender, EventArgs e)
         {
-            AreaRegistration.RegisterAllAreas();
-            GlobalConfiguration.Configure(WebApiConfig.Register);
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            var app = sender as HttpApplication;
+            if (app != null && app.Context != null)
+            {
+                app.Context.Response.Headers.Remove("Server");
+            }
+        }
+        protected void Application_PreSendRequestHeaders()
+        {
+            Response.Headers.Remove("Server");
+            Response.Headers.Remove("X-AspNet-Version");
         }
     }
 }
