@@ -57,7 +57,10 @@ namespace WebApi
             builder.RegisterType<CompanyQuery>().AsSelf();
             builder.RegisterType<CompanyType>().AsSelf();
             builder.RegisterType<DrugType>().AsSelf();
+            builder.RegisterType<PageInfoType>().AsSelf();
             
+
+
             builder.RegisterType<CompanySchema>().As<ISchema>().InstancePerRequest();
 
             builder.Register<GraphQL.IDependencyResolver>(c =>

@@ -766,7 +766,7 @@ namespace Data.Services
             };
         }
 
-        public Task<Drug> GetDrugByIdAsync(string id)
+        public Task<Drug> GetDrugByIdAsync(int id)
         {
             return Task.FromResult(_drugs.Single(xx => Equals(xx.id, id)));
         }
@@ -779,7 +779,7 @@ namespace Data.Services
 
     public interface IDrugService
     {
-        Task<Drug> GetDrugByIdAsync(string id);
+        Task<Drug> GetDrugByIdAsync(int id);
         Task<IEnumerable<Drug>> GetDrugsAsync();
 
     }

@@ -17,4 +17,15 @@ namespace Data.Schema
             Field(xx => xx.IsActive);
         }
     }
+
+    public class PageInfoType : ObjectGraphType<PageInfo<Company>>
+    {
+        public PageInfoType()
+        {
+            Field(x => x.List, type: typeof(CompanyType)).Description("list");
+            Field(xx => xx.PageCount);
+            Field(xx => xx.Size);
+            Field(xx => xx.TotalCount);
+        }
+    }
 }

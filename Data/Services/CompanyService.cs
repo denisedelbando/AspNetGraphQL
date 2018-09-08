@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using Data.Schema;
+using Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -375,9 +376,10 @@ namespace Data.Services
             return Task.FromResult(_companies.Single(xx => Equals(xx.id, id)));
         }
 
-        public Task<IEnumerable<Company>> GetCompanysAsync()
+        public Task<PageInfo<Company>> GetCompanysAsync(int page, int size)
         {
-            return Task.FromResult(_companies.AsEnumerable());
+            PageInfo<Company> comp = new PageInfo<Company>(_companies, page, size);
+            return Task.FromResult(comp);
         }
 
 
@@ -387,6 +389,6 @@ namespace Data.Services
     {
         Company GetCompanyById(int id);
         Task<Company> GetCompanyByIdAsync(int id);
-        Task<IEnumerable<Company>> GetCompanysAsync();
+        Task<PageInfo<Company>> GetCompanysAsync(int page, int size);
     }
 }

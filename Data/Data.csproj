@@ -63,6 +63,7 @@
     <Compile Include="Schema\Query\CompanyQuery.cs" />
     <Compile Include="Schema\Type\CompanyType.cs" />
     <Compile Include="Schema\Type\DrugType.cs" />
+    <Compile Include="PageInfo.cs" />
     <Compile Include="Services\CompanyService.cs" />
     <Compile Include="Services\DrugService.cs" />
   </ItemGroup>
