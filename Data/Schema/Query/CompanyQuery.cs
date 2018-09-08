@@ -15,10 +15,10 @@ namespace Data.Schema
         {
             Name = "Query";
             Field<PageInfoType>(
-                "allCompany",
+                "paginatedCompany",
                 arguments: new QueryArguments(
-                    new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "page", Description = "page of the company" },
-                    new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "size", Description = "size of the company" }
+                    new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "page", Description = "page of the list" },
+                    new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "size", Description = "size of the list returned" }
                 ),
                 resolve: context => companyService.GetCompanysAsync(context.GetArgument<int>("page"), context.GetArgument<int>("size"))
             );
