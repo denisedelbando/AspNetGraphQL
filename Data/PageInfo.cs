@@ -8,11 +8,11 @@ namespace Data
 {
     public class PageInfo<T>
     {
-        public int TotalCount { get; set; }
-        public int Size { get; set; }
-        public int PageCount { get; set; }
-        public IEnumerable<T> List { get; set; }
-        
+        public int TotalCount { get; private set; }
+        public int Size { get; private set; }
+        public int PageCount { get; private set; }
+        public IEnumerable<T> List { get; private set; }
+        public IEnumerable<string> Chars { get; set; }
         //private IEnumerable<T> OriginalList { get; set; }
         public PageInfo(IEnumerable<T> list, int page, int size)
         {

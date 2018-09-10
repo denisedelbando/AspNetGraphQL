@@ -376,9 +376,17 @@ namespace Data.Services
             return Task.FromResult(_companies.Single(xx => Equals(xx.id, id)));
         }
 
-        public Task<PageInfo<Company>> GetCompanysAsync(int page, int size)
+        public Task<PageInfo<Company>> GetCompanysAsync(int page, int size, string q = "")
         {
-            PageInfo<Company> comp = new PageInfo<Company>(_companies, page, size);
+            IEnumerable<Company> filtered;
+            if (!string.IsNullOrEmpty(q)) {
+                filtered = _companies.Where(xx => xx.CompanyName.ToUpper().Contains(q.ToUpper()));
+            }
+            else{
+                filtered = _companies;
+            }
+            PageInfo<Company> comp = new PageInfo<Company>(filtered, page, size);
+            comp.Chars = filtered.Select(xx => xx.CompanyName.ToUpper().Remove(1)).OrderBy(xx => xx).Distinct(); 
             return Task.FromResult(comp);
         }
 
@@ -389,6 +397,6 @@ namespace Data.Services
     {
         Company GetCompanyById(int id);
         Task<Company> GetCompanyByIdAsync(int id);
-        Task<PageInfo<Company>> GetCompanysAsync(int page, int size);
+        Task<PageInfo<Company>> GetCompanysAsync(int page, int size, string q = "");
     }
 }

@@ -23,11 +23,11 @@ namespace Data.Schema
     {
         public PageInfoType()
         {
-            //Field(x => x.List, type: typeof(CompanyType)).Description("list");
             Field<ListGraphType<CompanyType>>(
                 "company",
                 resolve: context => context.Source.List
             );
+            Field(xx => xx.Chars);
             Field(xx => xx.PageCount);
             Field(xx => xx.Size);
             Field(xx => xx.TotalCount);

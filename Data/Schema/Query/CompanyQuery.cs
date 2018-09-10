@@ -18,9 +18,10 @@ namespace Data.Schema
                 "paginatedCompany",
                 arguments: new QueryArguments(
                     new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "page", Description = "page of the list" },
-                    new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "size", Description = "size of the list returned" }
+                    new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "size", Description = "size of the list returned" },
+                    new QueryArgument<StringGraphType> { Name = "q", Description = "filter by name" }
                 ),
-                resolve: context => companyService.GetCompanysAsync(context.GetArgument<int>("page"), context.GetArgument<int>("size"))
+                resolve: context => companyService.GetCompanysAsync(context.GetArgument<int>("page"), context.GetArgument<int>("size"), context.GetArgument<string>("q"))
             );
             Field<CompanyType>(
                 "company",
